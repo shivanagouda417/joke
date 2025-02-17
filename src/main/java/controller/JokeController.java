@@ -12,10 +12,10 @@ import service.JokeService;
 public class JokeController {
 
         @Autowired
-        private JokeService jokeService;
+        private JokeService jokeServicess;
 
         @GetMapping("/joke")
         public Joke getJoke() {
-            return jokeService.getRandomJoke();
+            return jokeServicess.getRandomJoke();
         }
 }
