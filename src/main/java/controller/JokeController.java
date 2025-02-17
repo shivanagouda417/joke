@@ -12,6 +12,11 @@ import service.JokeService;
 public class JokeController {
 
         @Autowired
+        private JokeService jokeServicesssssssss;
+
+        @GetMapping("/joke")
+        public Joke getJoke() {
+            return jokeServicesssssssss.getRandomJoke();
         private JokeService jokeServicess;
 
         @GetMapping("/joke")
