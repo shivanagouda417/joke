@@ -17,5 +17,10 @@ public class JokeController {
         @GetMapping("/joke")
         public Joke getJoke() {
             return jokeServicesssssssss.getRandomJoke();
+        private JokeService jokeServicess;
+
+        @GetMapping("/joke")
+        public Joke getJoke() {
+            return jokeServicess.getRandomJoke();
         }
 }
